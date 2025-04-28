@@ -1,0 +1,134 @@
+/* style.css */
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('./fonts/Ethnocentric.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ethnocentric', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu a:hover
+{
+    color: #00bfff;
+    
+}
+
+.menu .btn-signin {
+    background-color: transparent;
+    border: 1px solid #00bfff;
+    color: #00bfff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Ethnocentric', sans-serif;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+/* From Uiverse.io by mrhyddenn */ 
+.btn-primary , .btn-secondary , .btn-signin {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .btn-primary , .btn-secondary , .btn-signin{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .btn-primary:hover , .btn-secondary:hover , .btn-signin:hover{
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
